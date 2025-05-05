@@ -14,25 +14,22 @@ Copyright 2024 Rodolfo González González
    limitations under the License.
 */
 
-// This setups a server listening on port :3000 on all available IPs. 
+// This setups a server listening on port :3000 on all available IPs.
 // You need to call it with something such as RESTing or curl, passing
 // a valid (or invalid) JWT in a GET request.
 
 package main
 
 import (
-	"os"
-
-	"github.com/gofiber/fiber/v2"
+	fiber "github.com/gofiber/fiber/v2"
 	"github.com/rgglez/gofiber-ip-middleware/gofiberip"
 )
 
 func main() {
-	providerUrl := os.Getenv("ZITADEL_PROVIDER")
-	clientId := os.Getenv("ZITADEL_CLIENTID")
+	allowedIPs := []string{"127.0.0.1"}
 
 	app := fiber.New()
-	app.Use(gofiberip.New(gofiberip.Config{ProviderUrl: providerUrl, ClientID: clientId}))
+	app.Use(gofiberip.New(gofiberip.Config{AllowedIPs: allowedIPs}))
 
 	app.Get("/", func(c *fiber.Ctx) error {
 		return c.SendString("Hello world")
