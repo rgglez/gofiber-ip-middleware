@@ -15,8 +15,8 @@ Copyright 2024 Rodolfo González González
 */
 
 // This setups a server listening on port :3000 on all available IPs.
-// You need to call it with something such as RESTing or curl, passing
-// a valid (or invalid) JWT in a GET request.
+// You need to call it with something such as RESTing, links or curl,
+// from an IP address in the whitelist (or not)
 
 package main
 
@@ -26,7 +26,9 @@ import (
 )
 
 func main() {
-	allowedIPs := []string{"127.0.0.1"}
+	// To try the middleware, simply change the IP address below to
+	// something not in your network, for example.
+	allowedIPs := []string{"127.0.0.2"}
 
 	app := fiber.New()
 	app.Use(gofiberip.New(gofiberip.Config{AllowedIPs: allowedIPs}))

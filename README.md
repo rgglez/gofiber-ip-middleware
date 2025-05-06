@@ -33,6 +33,11 @@ There are some configuration options available in the ```Config``` struct:
 * **```Next```** defines a function to skip this middleware when returned true. Optional. Default: nil
 * **```AllowedIPs```** an array of strings, which could be IP addresses, CIDR blocks or hostnames. Required.
 
+## Example
+
+An example is included in the [example](example/) directory.
+
+
 ## Dependencies
 
 * [github.com/gofiber/fiber/v2](https://github.com/gofiber/fiber/v2)
