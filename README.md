@@ -4,7 +4,7 @@
 ![GitHub all releases](https://img.shields.io/github/downloads/rgglez/gofiber-ip-middleware/total)
 ![GitHub issues](https://img.shields.io/github/issues/rgglez/gofiber-ip-middleware)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/rgglez/gofiber-ip-middleware)
-[![Go Report Card](https://goreportcard.com/badge/github.com/rgglez/gofiber-ip-middleware/gofiberip)](https://goreportcard.com/report/github.com/rgglez/gofiber-ip-middleware/gofiberip)
+[![Go Report Card](https://goreportcard.com/badge/github.com/rgglez/gofiber-ip-middleware/gofiberip/)](https://goreportcard.com/report/github.com/rgglez/gofiber-ip-middleware/gofiberip/)
 [![GitHub release](https://img.shields.io/github/release/rgglez/gofiber-ip-middleware.svg)](https://github.com/rgglez/gofiber-ip-middleware/releases/)
 ![GitHub stars](https://img.shields.io/github/stars/rgglez/gofiber-ip-middleware?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/rgglez/gofiber-ip-middleware?style=social)
