@@ -54,7 +54,7 @@ func New(config ...Config) fiber.Handler {
 		cfg = config[0]
 	}
 
-	// Preparse las IPs/CIDRs permitidas
+	// Preparse allowed IPs/CIDRs
 	var ipnets []*net.IPNet
 	for _, ip := range cfg.AllowedIPs {
 		if strings.Contains(ip, "/") {
